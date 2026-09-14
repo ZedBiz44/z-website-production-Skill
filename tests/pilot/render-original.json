@@ -1,0 +1,34 @@
+[
+  {
+    "width": 1280,
+    "title": "Prairie Bench — Fictional Demo",
+    "h1": "Garden care for busy Canmore homeowners",
+    "navVisible": true,
+    "brokenAnchors": [
+      {
+        "label": "Ask about garden care",
+        "href": "#quote"
+      }
+    ],
+    "overflow": false,
+    "formStatus": [
+      "Thanks! Request sent."
+    ]
+  },
+  {
+    "width": 390,
+    "title": "Prairie Bench — Fictional Demo",
+    "h1": "Garden care for busy Canmore homeowners",
+    "navVisible": false,
+    "brokenAnchors": [
+      {
+        "label": "Ask about garden care",
+        "href": "#quote"
+      }
+    ],
+    "overflow": false,
+    "formStatus": [
+      "Thanks! Request sent."
+    ]
+  }
+]

@@ -16,12 +16,16 @@ if any((ROOT / folder).is_symlink() for folder in resources):
 if dest.resolve().parent != (ROOT / "dist").resolve() or dest.is_symlink():
     raise SystemExit("Unsafe package target")
 if dest.exists():
-    def retry_readonly(function, path, error):
+    for directory in [dest, *dest.rglob("*")]:
+        if directory.is_dir() and not directory.is_symlink():
+            os.chmod(directory, directory.stat().st_mode | stat.S_IRWXU)
+    def retry_readonly(function, path, error_info):
+        error = error_info[1]
         if not isinstance(error, PermissionError):
             raise error
         os.chmod(path, stat.S_IWRITE | stat.S_IREAD | stat.S_IEXEC)
         function(path)
-    shutil.rmtree(dest, onexc=retry_readonly)
+    shutil.rmtree(dest, onerror=retry_readonly)
 dest.mkdir(parents=True)
 shutil.copyfile(ROOT / "SKILL.md", dest / "SKILL.md")
 for folder in resources:

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prairie Bench — Fictional Demo</title>
+  <style>
+    :root { --green: #165640; --ink: #172c25; --soft-green: #edf5ef; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); font: 18px/1.55 system-ui, sans-serif; }
+    header, main, footer { max-width: 1000px; margin: auto; padding: 24px; }
+    header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 20px; }
+    a { color: var(--green); }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #d28b26; outline-offset: 3px; }
+    .hero { padding: 34px 0 28px; }
+    h1 { max-width: 700px; line-height: 1.15; }
+    section { padding: 30px 0; }
+    .action, button { display: inline-block; border: 0; border-radius: 4px; padding: 13px 18px; background: var(--green); color: #fff; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+    .action:hover, button:hover { background: #0e412f; }
+    #contact { padding: 28px; background: var(--soft-green); border-radius: 8px; }
+    form { max-width: 540px; }
+    .field { display: grid; gap: 6px; margin: 0 0 18px; }
+    label { font-weight: 700; }
+    input { width: 100%; min-height: 46px; padding: 9px 11px; border: 1px solid #63776d; border-radius: 4px; font: inherit; }
+    #result { min-height: 1.55em; font-weight: 700; }
+    .demo-note { margin-bottom: 0; }
+    footer { color: #385248; font-size: .94rem; }
+    @media (max-width: 600px) {
+      header { display: block; }
+      nav { margin-top: 14px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      nav a { padding: 8px 4px; text-align: center; border: 1px solid #9cb4a8; border-radius: 4px; font-size: .91rem; }
+      header, main, footer { padding: 18px; }
+      #contact { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Prairie Bench — Demo</strong>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#process">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <h1>Garden care for busy Canmore homeowners</h1>
+      <p>Fictional demonstration business. We help you enjoy your yard without spending every weekend maintaining it.</p>
+      <a class="action" href="#contact" onclick="event.preventDefault(); const nameField = document.querySelector('#contact input[name=name]'); document.getElementById('contact').scrollIntoView({behavior:'smooth', block:'start'}); nameField.focus({preventScroll:true});">Ask about garden care</a>
+    </div>
+    <section id="services">
+      <h2>Choose the help you need</h2>
+      <p>Seasonal cleanup, recurring garden care, and planting support.</p>
+    </section>
+    <section id="process">
+      <h2>Start with a short conversation</h2>
+      <p>Tell us about your garden. We discuss your needs and provide a written scope before work begins.</p>
+    </section>
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Request a conversation</h2>
+      <form onsubmit="event.preventDefault(); document.getElementById('result').textContent='Thanks. Your demo request was recorded on this page; no message was sent.';">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <button type="submit">Send demo request</button>
+      </form>
+      <p id="result" role="status" aria-live="polite"></p>
+      <p class="demo-note">Demo form: no messages are delivered.</p>
+    </section>
+  </main>
+  <footer>Fictional preview • Canmore, Alberta • No customer claims</footer>
+</body>
+</html>

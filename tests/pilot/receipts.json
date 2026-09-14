@@ -1,0 +1,55 @@
+{
+  "analysis": {
+    "runId": "6889c10e-8c62-4038-89b9-03c06dce8868",
+    "status": "ok",
+    "sessionId": "ab37bf8d-bf00-4ab2-aaf7-d5abeee5fff8",
+    "model": "gpt-5.6-terra",
+    "toolNames": [
+      "bash",
+      "browser",
+      "session_status",
+      "apply_patch"
+    ]
+  },
+  "critique": {
+    "runId": "8e299f64-c0f4-4318-9972-f3e14d78da13",
+    "status": "ok",
+    "sessionId": "cb47a116-1e26-4706-a0c7-5fe3181ee529",
+    "model": "gpt-5.6-terra",
+    "toolNames": [
+      "bash",
+      "browser",
+      "apply_patch"
+    ]
+  },
+  "production": {
+    "runId": "5f218d98-5ac8-4244-9d47-4db5795ba58f",
+    "status": "ok",
+    "sessionId": "4faac4b5-82b2-478e-a0c6-4e5bbd87dffa",
+    "model": "gpt-5.6-terra",
+    "toolNames": [
+      "bash",
+      "apply_patch"
+    ]
+  },
+  "boundaries": {
+    "runId": "48603b34-390f-4238-91c7-470a5f3d0cc4",
+    "status": "ok",
+    "sessionId": "1fea5212-5639-46fe-a7bb-fb63fa20ba48",
+    "model": "gpt-5.6-terra",
+    "toolNames": [
+      "bash",
+      "apply_patch"
+    ]
+  },
+  "retest": {
+    "runId": "d4bcb006-ed7b-45cd-b9d1-7db568c389ac",
+    "sessionId": "e37927ab-160c-40b2-aa37-0ea81d0a249d",
+    "model": "gpt-5.6-terra",
+    "status": "ok",
+    "toolNames": [
+      "bash",
+      "apply_patch"
+    ]
+  }
+}

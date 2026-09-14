@@ -1,0 +1,13 @@
+{
+  "runtime_source_commit": "102610ec3fe7ea70f268dac7a1c7f8ba68f0dfc4",
+  "installed_agent": "Wilma",
+  "files": {
+    "SKILL.md": "64adcb0778fc51b50b335f2ac8a012a949fb4a676448f96695780784458c8c88",
+    "assets/completion-record.md": "50c9aa1eff0df7ba80588b053f6e271d471ae9ff4a40868be5566463aec067ad",
+    "assets/website-brief.md": "d5a5d1810405ab54d6d0275e6dc96e2abfeb414031cca1c9f2b8958094450dae",
+    "references/release.md": "4772f7583b33d22a232ebadcf6956236b5c7184daeaee84c3260f0d9897028a0",
+    "references/runtime.md": "fde19902254dd6ea9833340269de55211c16756c722a377c985484d42d31eb8c",
+    "references/website-contract.md": "b0aeaa3747721363b44fc7e638df2578b1260776e2f443b61546eef9c38d22de",
+    "references/website-criteria.md": "60d3c4ab8204415da19189d81d158fa860f80b89d93301e34421a189ef68485d"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "width": 1280,
+    "navigation": "pass",
+    "heroFocus": "pass",
+    "invalidForm": "pass",
+    "validDemoForm": "pass",
+    "overflow": "none",
+    "protectedContent": "pass"
+  },
+  {
+    "width": 390,
+    "navigation": "pass",
+    "heroFocus": "pass",
+    "invalidForm": "pass",
+    "validDemoForm": "pass",
+    "overflow": "none",
+    "protectedContent": "pass"
+  }
+]
